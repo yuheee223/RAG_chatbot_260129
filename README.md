@@ -16,20 +16,6 @@
 
 ## System Architecture
 
-```
-User Query
-   ↓
-Embedding Model
-   ↓
-Vector Database 
-   ↓
-Relevant Documents
-   ↓
-LLM (with Prompt + Context)
-   ↓
-Final Answer
-```
-
 ### Indexing
 
 ```
