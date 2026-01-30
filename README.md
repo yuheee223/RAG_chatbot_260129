@@ -1,6 +1,6 @@
 # RAG chatbot - 旅遊不便險
 
-這是一個根據**單一 PDF 文件（海外不便險條款）**所打造的聊天機器人，採用 **Retrieval-Augmented Generation (RAG)** 架構。
+這是一個根據**單一 PDF 文件**（海外不便險條款）所打造的聊天機器人，採用 **Retrieval-Augmented Generation (RAG)** 架構。
 系統會先從保險條款 PDF 中檢索與問題最相關的內容，再結合大型語言模型（LLM，gemini-2.5-flash）生成回答。
 
 ---
@@ -28,6 +28,28 @@ Relevant Documents
 LLM (with Prompt + Context)
    ↓
 Final Answer
+```
+
+### Indexing
+
+```
+PDF
+ → 將條款內容切分為 chunks
+ → 為每個 chunk 建立 metadata（如條款編號、章節）
+ → 對 chunks 進行 embedding
+ → 儲存至 ChromaDB（embedding + text + metadata）
+```
+
+### Query
+
+```
+使用者問題
+ → embedding(query)
+ → ChromaDB 回傳 Top-N 相關條款 chunks
+ → Cross Encoder 對 (query × chunks) 進行 rerank
+ → chunk + metadata 格式化為 prompt context
+ → 組合 query + context 生成 LLM prompt
+ → LLM 根據條款內容產生最終回答
 ```
 
 ---
@@ -93,3 +115,5 @@ Bot: 根據您提供的保險條款，以下為各險種不可理賠的範圍：
 ## 小筆記
 
 - ChromaDB metadata 不支援 list，使用 JSON 或拆條存儲
+
+
