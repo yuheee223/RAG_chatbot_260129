@@ -1,6 +1,6 @@
 # RAG chatbot - 旅遊不便險
 
-這是一個根據**單一 PDF 文件（海外不便險條款）**所打造的聊天機器人，採用 Retrieval-Augmented Generation (RAG) 架構。
+這是一個根據**單一 PDF 文件（海外不便險條款）**所打造的聊天機器人，採用 **Retrieval-Augmented Generation (RAG)** 架構。
 系統會先從保險條款 PDF 中檢索與問題最相關的內容，再結合大型語言模型（LLM，gemini-2.5-flash）生成回答。
 
 ---
