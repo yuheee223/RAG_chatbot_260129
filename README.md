@@ -4,7 +4,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 * 🔎 **Document Retrieval**：從向量資料庫中檢索最相關的文件片段
 * 📄 **metadata**：自動判斷保險事件類型
@@ -13,7 +13,7 @@
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 User Query
@@ -31,7 +31,7 @@ Final Answer
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 * **Language**: Python
 * **LLM**:  HuggingFace 
@@ -41,7 +41,7 @@ Final Answer
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -52,7 +52,7 @@ Final Answer
 
 ---
 
-## 🧪 Example Usage
+## Example Usage
 
 ```
 User: 
@@ -61,14 +61,14 @@ Bot:
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 * [ ] Conversation memory
 * [ ] 
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 * LangChain
 * FAISS / Chroma
