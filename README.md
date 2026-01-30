@@ -113,5 +113,6 @@ Bot: 根據您提供的保險條款，以下為各險種不可理賠的範圍：
 ## 小筆記
 
 - ChromaDB metadata 不支援 list，使用 JSON 或拆條存儲
+- PyTorch 還不完全支援 NumPy 2.x API → !pip install -U "numpy<2.0"
 
 
