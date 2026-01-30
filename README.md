@@ -103,13 +103,6 @@ Bot: 根據您提供的保險條款，以下為各險種不可理賠的範圍：
 
 ---
 
-## Future Improvements
-
-* [ ] Conversation memory
-* [ ] 
-
----
-
 ## 小筆記
 
 - ChromaDB metadata 不支援 list，使用 JSON 或拆條存儲
