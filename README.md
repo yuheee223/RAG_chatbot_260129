@@ -48,10 +48,9 @@ PDF
 ## Tech Stack
 
 * **Language**: Python
-* **LLM**:  HuggingFace 
-* **Embedding**: Sentence-Transformers 
-* **Vector DB**: FAISS / Chroma 
-* **Framework**: LangChain 
+* **LLM**:  Google Gemini 2.5-flash 
+* **Embedding**: shibing624/text2vec-base-chinese(Sentence-Transformers) 
+* **Vector DB**: ChromaDB
 
 ---
 
